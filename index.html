@@ -11,45 +11,29 @@
         <h1>VPNetwork Control Panel</h1>
     </header>
 
-    <section id="authentication">
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Authentication')">Authentication</button>
+        <button class="tablinks" onclick="openTab(event, 'Encryption')">Encryption</button>
+        <button class="tablinks" onclick="openTab(event, 'ServerSelection')">Server Selection</button>
+        <!-- Add more tabs as needed -->
+    </div>
+
+    <div id="Authentication" class="tabcontent">
         <h2>User Authentication</h2>
         <!-- Authentication UI elements here -->
-    </section>
+    </div>
 
-    <section id="encryption">
+    <div id="Encryption" class="tabcontent">
         <h2>Encryption Settings</h2>
         <!-- Encryption settings UI elements here -->
-    </section>
+    </div>
 
-    <section id="server_selection">
+    <div id="ServerSelection" class="tabcontent">
         <h2>Server Selection</h2>
         <!-- Server selection UI elements here -->
-    </section>
+    </div>
 
-    <section id="network_config">
-        <h2>Network Configuration</h2>
-        <!-- Network configuration UI elements here -->
-    </section>
-
-    <section id="kill_switch">
-        <h2>VPN Kill Switch</h2>
-        <!-- Kill switch UI elements here -->
-    </section>
-
-    <section id="protocol_management">
-        <h2>Protocol Management</h2>
-        <!-- Protocol management UI elements here -->
-    </section>
-
-    <section id="logging_monitoring">
-        <h2>Logging and Monitoring</h2>
-        <!-- Logging and monitoring UI elements here -->
-    </section>
-
-    <section id="update_maintenance">
-        <h2>Updates and Maintenance</h2>
-        <!-- Update and maintenance UI elements here -->
-    </section>
+    <!-- Add more tab contents as needed -->
 
     <footer>
         <p>© 2024 VPNetwork. All rights reserved.</p>
