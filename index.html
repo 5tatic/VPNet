@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimal-scale=0.5, user-scalable=true" />
+    <title>VPNetwork Control Panel</title>
+    <link rel="stylesheet" href="style.css"/> <!-- Your cool CSS styles -->
+    <script src="script.js"></script> <!-- Your awesome JavaScript -->
+</head>
+<body>
+    <header>
+        <h1>Secure Your Network</h1>
+    </header>
+    <section id="detect_network">
+        <h2>Detect Network</h2>
+        <button id="detect_button">Detect Network</button>
+        <p id="detected_network_info">No network detected yet</p>
+    </section>
+    <section id="available_networks">
+        <h2>Available Networks</h2>
+        <ul id="network_list">
+            <!-- List of networks will be populated here -->
+        </ul>
+    </section>
+    <section id="connections">
+        <h2>Manage Connections</h2>
+        <button id="detect_button">Detect Networks</button>
+        <ul id="detected_networks">
+            <!-- Detected networks will be listed here -->
+        </ul>
+        <select id="network_select" class="section">
+            <option value="">Select a Network</option>
+            <!-- Options will be dynamically added here -->
+        </select>
+        <button id="connect_button">Connect</button>
+    </section> 
+    <section id="status">
+        <h2>Connection Status</h2>
+        <p id="status_info">Disconnected</p>
+    </section>
+    <footer>
+        <p>© 2024 VPNetwork. All rights reserved.</p>
+    </footer>
+    <script src="detnet.py"></script>
+    <script src="script.js"></script>
+</body>
+</html>
