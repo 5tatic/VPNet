@@ -1,23 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const detectButton = document.getElementById('detect_button');
-
-    detectButton.addEventListener('click', function() {
-        fetch('/detect_networks')
-            .then(response => response.json())
-            .then(data => {
-                const networkSelect = document.getElementById('network_select');
-                networkSelect.innerHTML = ''; // Clear the dropdown
-
-                // Populate the dropdown with detected networks
-                data.forEach(network => {
-                    const option = document.createElement('option');
-                    option.value = network;
-                    option.textContent = network;
-                    networkSelect.appendChild(option);
-                });
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    });
-});
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
